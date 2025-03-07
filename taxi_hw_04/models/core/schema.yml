@@ -18,7 +18,7 @@ models:
             - not_null:
                 severity: error
       
-  - name: fact_trips
+  - name: fct_taxi_trips_quarterly_revenue
     description: >
       Taxi trips corresponding to both service zones (Green and yellow).
       The table contains records where both pickup and dropoff locations are valid and known zones. 
