@@ -127,3 +127,64 @@ models:
       - name: payment_type_description
         data_type: string
         description: ""
+
+  - name: fct_fhv_monthly_zone_traveltime_p90
+    description: >
+      Taxi trips corresponding to both service zones (Green and yellow).
+      The table contains records where both pickup and dropoff locations are valid and known zones. 
+      Each record corresponds to a trip uniquely identified by tripid. 
+    columns:
+
+      - name: dispatching_base_num
+        data_type: string
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dropOff_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: pickup_location_id
+        data_type: int64
+        description: ""
+
+      - name: dropoff_location_id
+        data_type: int64
+        description: ""
+
+      - name: SR_Flag
+        data_type: string
+        description: ""
+
+      - name: Affiliated_base_number
+        data_type: string
+        description: ""
+
+      - name: dropoff_borough
+        data_type: string
+        description: ""
+
+      - name: dropoff_zone
+        data_type: string
+        description: ""
+        
+      - name: pickup_borough
+        data_type: string
+        description: ""
+
+      - name: pickup_zone
+        data_type: string
+        description: ""
+   
+      - name: pickup_year
+        data_type: int64
+        description: ""
+        
+      - name: pickup_month
+        data_type: int64
+        description: ""
+
+  
